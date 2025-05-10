@@ -42,7 +42,7 @@ Pfad:
 
 Zugang:  
 ```env
-ADMIN_PASSWORD=flb
+ADMIN_PASSWORD=admin
 ```
 (setzbar in deiner `.env`-Datei)
 
