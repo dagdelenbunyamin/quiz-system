@@ -1,66 +1,104 @@
-# Modern Quiz App
+# 🧠 Modern Quiz App
 
-Eine moderne Quiz-Anwendung für Schulen und Klassenarbeiten, entwickelt mit Next.js, React, Tailwind CSS und Framer Motion.
+Ein modernes, motivierendes Quizsystem für Schulen und Schüler – entwickelt mit **Next.js (App Router)**, **React**, **Tailwind CSS**, **Framer Motion** und **Recharts**.  
+Alle Fragen werden lokal in einer `questions.json`-Datei gespeichert – kein Datenbankserver nötig.
 
-## Funktionen
+---
 
-- Interaktives Quiz mit mehreren Antwortmöglichkeiten
-- Timer für jede Frage
-- Motivierende Nachrichten während des Tests
-- Detaillierte Ergebnisauswertung mit Visualisierungen
-- Admin-Bereich zum Verwalten von Fragen
-- Responsive Design für alle Geräte
+## 🚀 Features
 
-## Projektstruktur
+- ✅ Multiple-Choice-Quiz mit Zeitlimit
+- 🎯 Visuelle Auswertung mit Kreisdiagramm
+- 📱 Mobile-optimiertes UI (Tailwind + Framer Motion)
+- 🔐 Admin-Bereich mit Passwortschutz
+- 📝 Fragenverwaltung direkt über das Interface oder per JSON-Datei
+- ⚙️ Schneller Start mit **pnpm**
 
-- `app/`: Next.js App Router Komponenten
-  - `page.tsx`: Startseite
-  - `quiz/page.tsx`: Quiz-Interface
-  - `results/page.tsx`: Ergebnisseite
-  - `admin/page.tsx`: Admin-Bereich
-  - `actions/question-actions.ts`: Server Actions für die Fragenverwaltung
-- `components/`: React-Komponenten
-  - `quiz/`: Quiz-bezogene Komponenten
-  - `results/`: Ergebnis-bezogene Komponenten
-  - `admin/`: Admin-bezogene Komponenten
-  - `ui/`: UI-Komponenten (shadcn/ui)
-- `questions.json`: Datei mit allen Quizfragen
+---
 
-## Fragen verwalten
+## ⚙️ Schnellstart (lokal)
 
-Die Fragen werden in der Datei `questions.json` im Hauptverzeichnis des Projekts gespeichert. Diese Datei hat folgendes Format:
+```bash
+# 1. Projekt klonen
+git clone https://github.com/dagdelenbunyamin/quiz-system.git
+cd quiz-system
 
-\`\`\`json
+# 2. Abhängigkeiten installieren
+pnpm install
+
+# 3. Entwicklungsserver starten
+pnpm run dev
+```
+
+Dann im Browser öffnen:  
+🔗 http://localhost:3000
+
+---
+
+## 🔐 Admin-Bereich
+
+Pfad:  
+`/admin` → z. B. http://localhost:3000/admin
+
+Zugang:  
+```env
+ADMIN_PASSWORD=flb
+```
+(setzbar in deiner `.env`-Datei)
+
+---
+
+## 📄 Fragenstruktur
+
+Die Fragen werden in der Datei [`questions.json`](./questions.json) gespeichert. Beispiel:
+
+```json
 [
   {
-    "id": 1,
-    "question": "Fragentext",
-    "options": ["Option A", "Option B", "Option C", "Option D"],
-    "correctOption": 0,
-    "category": "Kategorie"
-  },
-  // weitere Fragen...
+    "id": "1",
+    "question": "Welcher Berg ist der höchste der Welt?",
+    "options": ["K2", "Mount Everest", "Zugspitze", "Mont Blanc"],
+    "correctOption": 1,
+    "category": "Geografie"
+  }
 ]
-\`\`\`
+```
 
-Du kannst diese Datei direkt bearbeiten oder den Admin-Bereich verwenden, um Fragen hinzuzufügen, zu bearbeiten oder zu löschen.
+---
 
-## Admin-Bereich
+## 📁 Projektstruktur
 
-Der Admin-Bereich ist unter `/admin` erreichbar. Das Standardpasswort ist "admin", kann aber über die Umgebungsvariable `ADMIN_PASSWORD` geändert werden.
+```bash
+├── app/                # Next.js App Router Pages
+├── components/         # UI-Komponenten
+├── public/             # Statische Dateien
+├── styles/             # Globale CSS-Dateien
+├── questions.json      # Alle Quizfragen lokal gespeichert
+├── .env                # Umgebungsvariablen (z. B. Admin-Passwort)
+├── package.json        # Projektkonfiguration
+├── tailwind.config.ts  # Tailwind-Setup
+```
 
-## Entwicklung
+---
 
-1. Klone das Repository
-2. Installiere die Abhängigkeiten: `npm install`
-3. Starte den Entwicklungsserver: `npm run dev`
-4. Öffne [http://localhost:3000](http://localhost:3000) im Browser
+## 🌍 Deployment (optional)
 
-## Deployment
+Das Projekt ist bereit für Deployment mit Vercel oder anderen Node.js-fähigen Plattformen:
 
-1. Baue die Anwendung: `npm run build`
-2. Starte den Produktionsserver: `npm start`
+```bash
+pnpm run build
+pnpm start
+```
 
-## Lizenz
+---
 
-MIT
+## 📄 Lizenz
+
+MIT License – frei verwendbar für Bildungs- und Entwicklungszwecke.
+
+---
+
+## ✨ Autor
+
+**Bünyamin Dagdelen**  
+[https://github.com/dagdelenbunyamin](https://github.com/dagdelenbunyamin)
