@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "Was ist die Hauptstadt von Deutschland?",
+    "options": [
+      "Berlin",
+      "München",
+      "Hamburg",
+      "Frankfurt"
+    ],
+    "correctOption": 0,
+    "category": "Geografie"
+  },
+  {
+    "id": 2,
+    "question": "Welches Element hat das chemische Symbol 'O'?",
+    "options": [
+      "Gold",
+      "Sauerstoff",
+      "Osmium",
+      "Silber"
+    ],
+    "correctOption": 1,
+    "category": "Chemie"
+  },
+  {
+    "id": 3,
+    "question": "Wer schrieb 'Romeo und Julia'?",
+    "options": [
+      "Charles Dickens",
+      "Jane Austen",
+      "William Shakespeare",
+      "Friedrich Schiller"
+    ],
+    "correctOption": 2,
+    "category": "Literatur"
+  },
+  {
+    "id": 4,
+    "question": "Wie viele Planeten hat unser Sonnensystem?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correctOption": 1,
+    "category": "Astronomie"
+  },
+  {
+    "id": 5,
+    "question": "Was ist das Ergebnis von 7 × 8?",
+    "options": [
+      "54",
+      "56",
+      "63",
+      "64"
+    ],
+    "correctOption": 1,
+    "category": "Mathematik"
+  },
+  {
+    "id": 6,
+    "question": "Welches Land hat die größte Fläche der Welt?",
+    "options": [
+      "China",
+      "USA",
+      "Kanada",
+      "Russland"
+    ],
+    "correctOption": 3,
+    "category": "Geografie"
+  },
+  {
+    "id": 7,
+    "question": "Welches dieser Tiere ist ein Säugetier?",
+    "options": [
+      "Krokodil",
+      "Schlange",
+      "Delfin",
+      "Schildkröte"
+    ],
+    "correctOption": 2,
+    "category": "Biologie"
+  },
+  {
+    "id": 8,
+    "question": "Wer malte die 'Mona Lisa'?",
+    "options": [
+      "Vincent van Gogh",
+      "Pablo Picasso",
+      "Leonardo da Vinci",
+      "Michelangelo"
+    ],
+    "correctOption": 2,
+    "category": "Kunst"
+  },
+  {
+    "id": 9,
+    "question": "Welches ist das kleinste Primzahl?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctOption": 2,
+    "category": "Mathematik"
+  },
+  {
+    "id": 10,
+    "question": "Welches Organ ist für die Produktion von Insulin verantwortlich?",
+    "options": [
+      "Leber",
+      "Niere",
+      "Bauchspeicheldrüse",
+      "Milz"
+    ],
+    "correctOption": 2,
+    "category": "Biologie"
+  }
+]
